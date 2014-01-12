@@ -1,0 +1,22 @@
+---
+layout: default
+title: agronomyinfo.tk
+---
+
+<h2>最新文章</h2>
+<ul>
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>快速访问</h2>
+<ul>
+  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="http://scholar.google.com/">Google scholar</a></li>
+</ul>
+
+<h2>致谢</h2>
+<ul>
+  <li><span>{{ post.date | date_to_string }}</span><a href="https://github.com/mojombo/tpw">mojombo:</a>提供index.html文件</li>
+  <li><span>{{ post.date | date_to_string }}</span><a href="http:www.ruanyifeng.com/blog/">阮一峰：</a>搭建一个免费的，无限流量的Blog</li>
+</ul>
